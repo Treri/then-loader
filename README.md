@@ -15,7 +15,7 @@ It's up to you to specify your Promise library of choice as a parameter.
 // Assuming you use Bluebird
 var load = require("then?bluebird!./file.js");
 
-// The chunk is requested when you require the file and is available in the then callback
+// load is a promise, and is resolved when file.js loaded
 load.then(function(file) {
 
 });
@@ -42,6 +42,4 @@ The bundle name may include `[filename]`, which will be replaced with the filena
 ```
 
 ### License
-
-MIT (http://www.opensource.org/licenses/mit-license.php)
-
+MIT
